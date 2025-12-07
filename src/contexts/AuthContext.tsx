@@ -17,9 +17,19 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    // Check if Supabase is configured
+    if (!import.meta.env.VITE_SUPABASE_URL || !import.meta.env.VITE_SUPABASE_ANON_KEY) {
+      console.warn('Supabase not configured. Running in demo mode.')
+      setLoading(false)
+      return
+    }
+
     // Check active session
     supabase.auth.getSession().then(({ data: { session } }) => {
       setUser(session?.user ?? null)
+      setLoading(false)
+    }).catch((error) => {
+      console.error('Auth error:', error)
       setLoading(false)
     })
 
@@ -32,11 +42,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [])
 
   const signIn = async (email: string, password: string) => {
+    if (!import.meta.env.VITE_SUPABASE_URL || !import.meta.env.VITE_SUPABASE_ANON_KEY) {
+      throw new Error('Supabase לא מוגדר. אנא הגדר את משתני הסביבה.')
+    }
     const { error } = await supabase.auth.signInWithPassword({ email, password })
     if (error) throw error
   }
 
   const signOut = async () => {
+    if (!import.meta.env.VITE_SUPABASE_URL || !import.meta.env.VITE_SUPABASE_ANON_KEY) {
+      return
+    }
     const { error } = await supabase.auth.signOut()
     if (error) throw error
   }
