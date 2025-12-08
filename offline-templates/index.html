@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="מערכת תבניות מקומית - מאגר תבניות מצגות לשימוש ללא אינטרנט">
+    <meta name="author" content="מערכת פנימית">
+
+    <title>מאגר תבניות מצגות</title>
+
+    <!-- CSS מקומי בלבד - ללא CDN -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Favicon - אייקון מקומי -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+    <!-- === כותרת עליונה === -->
+    <header class="header">
+        <div class="header-content">
+            <h1>מאגר תבניות מצגות</h1>
+            <p>בחרו מתוך מגוון תבניות מקצועיות מוכנות לשימוש</p>
+            <div class="header-badge">
+                <!-- אייקון אופליין -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <span>מערכת מקומית - עובד ללא אינטרנט</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- === תוכן ראשי === -->
+    <main class="main-content">
+
+        <!-- חיפוש -->
+        <section class="search-section">
+            <div class="search-container">
+                <span class="search-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </span>
+                <input
+                    type="text"
+                    id="search-input"
+                    class="search-input"
+                    placeholder="חיפוש תבנית..."
+                    autocomplete="off"
+                    spellcheck="false"
+                >
+            </div>
+        </section>
+
+        <!-- סטטיסטיקות -->
+        <section class="stats-bar">
+            <div class="stat-item">
+                <span class="stat-number" id="total-count">0</span>
+                <span class="stat-label">תבניות זמינות</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px; color: #22c55e;">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </span>
+                <span class="stat-label">מוכן לשימוש</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px; color: #3b82f6;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </span>
+                <span class="stat-label">ללא צורך באינטרנט</span>
+            </div>
+        </section>
+
+        <!-- כותרת מקטע התבניות -->
+        <h2 class="section-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            כל התבניות
+        </h2>
+
+        <!-- רשת התבניות -->
+        <div id="templates-grid" class="templates-grid">
+            <!-- התבניות ייטענו כאן דינמית -->
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                <p>טוען תבניות...</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- === תחתית === -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">מערכת תבניות מקומית - לשימוש פנים ארגוני</p>
+            <p class="footer-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                כל הקבצים מאוחסנים מקומית - אין תלות באינטרנט
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript מקומי בלבד - ללא CDN -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#047857;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGrad2)"/>
+
+  <!-- Decorative shapes -->
+  <polygon points="1920,0 1920,400 1400,0" fill="rgba(255,255,255,0.05)"/>
+  <polygon points="0,1080 600,1080 0,700" fill="rgba(0,0,0,0.1)"/>
+  <circle cx="1600" cy="800" r="250" fill="rgba(255,255,255,0.05)"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="1920" height="120" fill="rgba(0,0,0,0.2)"/>
+
+  <!-- Book/Education icon -->
+  <g transform="translate(100, 40)">
+    <rect x="0" y="0" width="50" height="40" rx="4" fill="white"/>
+    <rect x="22" y="0" width="6" height="40" fill="url(#bgGrad2)"/>
+  </g>
+
+  <!-- Header text -->
+  <text x="180" y="78" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white">
+    מערכת הדרכות
+  </text>
+
+  <!-- Main title -->
+  <text x="100" y="280" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="white">
+    מצגת הדרכה וחינוך
+  </text>
+
+  <!-- Subtitle -->
+  <text x="100" y="350" font-family="Arial, sans-serif" font-size="32" fill="rgba(255,255,255,0.85)">
+    תבנית מעוצבת לקורסים, הדרכות ומפגשי למידה
+  </text>
+
+  <!-- Main content area -->
+  <rect x="100" y="420" width="1100" height="500" rx="20" fill="white"/>
+
+  <!-- Content sections inside white box -->
+  <rect x="140" y="460" width="320" height="200" rx="12" fill="#f0fdf4"/>
+  <rect x="140" y="480" width="280" height="24" rx="4" fill="#059669"/>
+  <rect x="140" y="520" width="300" height="12" rx="4" fill="#d1fae5"/>
+  <rect x="140" y="545" width="260" height="12" rx="4" fill="#d1fae5"/>
+  <rect x="140" y="570" width="280" height="12" rx="4" fill="#d1fae5"/>
+  <rect x="140" y="595" width="200" height="12" rx="4" fill="#d1fae5"/>
+
+  <rect x="490" y="460" width="320" height="200" rx="12" fill="#f0fdf4"/>
+  <rect x="490" y="480" width="280" height="24" rx="4" fill="#059669"/>
+  <rect x="490" y="520" width="300" height="12" rx="4" fill="#d1fae5"/>
+  <rect x="490" y="545" width="240" height="12" rx="4" fill="#d1fae5"/>
+  <rect x="490" y="570" width="280" height="12" rx="4" fill="#d1fae5"/>
+  <rect x="490" y="595" width="220" height="12" rx="4" fill="#d1fae5"/>
+
+  <rect x="840" y="460" width="320" height="200" rx="12" fill="#f0fdf4"/>
+  <rect x="840" y="480" width="280" height="24" rx="4" fill="#059669"/>
+  <rect x="840" y="520" width="290" height="12" rx="4" fill="#d1fae5"/>
+  <rect x="840" y="545" width="260" height="12" rx="4" fill="#d1fae5"/>
+  <rect x="840" y="570" width="280" height="12" rx="4" fill="#d1fae5"/>
+  <rect x="840" y="595" width="180" height="12" rx="4" fill="#d1fae5"/>
+
+  <!-- Progress bar -->
+  <rect x="140" y="720" width="1020" height="40" rx="20" fill="#e5e7eb"/>
+  <rect x="140" y="720" width="680" height="40" rx="20" fill="url(#accentGrad2)"/>
+  <text x="650" y="748" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+    67%
+  </text>
+
+  <!-- Bullet points -->
+  <circle cx="160" y="820" r="8" fill="#059669"/>
+  <rect x="185" y="812" width="300" height="16" rx="4" fill="#6b7280"/>
+  <circle cx="160" y="860" r="8" fill="#059669"/>
+  <rect x="185" y="852" width="280" height="16" rx="4" fill="#6b7280"/>
+  <circle cx="160" y="900" r="8" fill="#059669"/>
+  <rect x="185" y="892" width="320" height="16" rx="4" fill="#6b7280"/>
+
+  <!-- Side panel -->
+  <rect x="1280" y="420" width="540" height="500" rx="20" fill="rgba(255,255,255,0.15)"/>
+
+  <!-- Chart placeholder -->
+  <circle cx="1550" cy="620" r="120" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="4"/>
+  <path d="M1550,500 A120,120 0 0 1 1650,680" fill="none" stroke="url(#accentGrad2)" stroke-width="24" stroke-linecap="round"/>
+
+  <!-- Side text -->
+  <rect x="1320" y="780" width="460" height="20" rx="4" fill="rgba(255,255,255,0.4)"/>
+  <rect x="1320" y="820" width="400" height="20" rx="4" fill="rgba(255,255,255,0.3)"/>
+  <rect x="1320" y="860" width="440" height="20" rx="4" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Footer -->
+  <text x="100" y="1000" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.7)">
+    15 שקפים | יחס 16:9 | PPTX
+  </text>
+</svg>

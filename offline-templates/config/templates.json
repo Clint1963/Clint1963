@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-01",
+  "description": "מאגר תבניות מצגות - מערכת מקומית ללא תלות באינטרנט",
+  "templates": [
+    {
+      "id": "template-001",
+      "name": "מצגת עסקית מקצועית",
+      "description": "תבנית מצגת עסקית בעיצוב מודרני ונקי, מתאימה לישיבות הנהלה, הצגות פרויקטים ודוחות תקופתיים.",
+      "file": "business-professional.pptx",
+      "preview": "business-professional-preview.svg",
+      "format": "pptx",
+      "badge": "חדש",
+      "tags": ["עסקי", "מקצועי", "הנהלה", "דוח"],
+      "slides": 12,
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "template-002",
+      "name": "מצגת הדרכה וחינוך",
+      "description": "תבנית מעוצבת להדרכות, קורסים ומפגשי למידה. כוללת עיצוב ברור וקריא עם מקום לתרשימים ותמונות.",
+      "file": "training-education.pptx",
+      "preview": "training-education-preview.svg",
+      "format": "pptx",
+      "tags": ["הדרכה", "חינוך", "קורס", "למידה"],
+      "slides": 15,
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "template-003",
+      "name": "דוח סיכום פרויקט",
+      "description": "תבנית מקצועית לסיכום פרויקטים, הכוללת שקפי התקדמות, לוחות זמנים, תקציב ומסקנות.",
+      "file": "project-summary.pptx",
+      "preview": "project-summary-preview.svg",
+      "format": "pptx",
+      "tags": ["פרויקט", "סיכום", "דוח", "התקדמות"],
+      "slides": 10,
+      "aspectRatio": "16:9"
+    }
+  ]
+}

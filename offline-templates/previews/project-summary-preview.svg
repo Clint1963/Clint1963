@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22d3ee;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22d3ee;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGrad3)"/>
+
+  <!-- Grid pattern overlay -->
+  <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  </pattern>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="200" cy="200" r="150" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="1750" cy="900" r="200" fill="rgba(0,0,0,0.1)"/>
+
+  <!-- Title -->
+  <text x="100" y="120" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="white">
+    דוח סיכום פרויקט
+  </text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.8)">
+    תבנית מקצועית להצגת התקדמות, לוחות זמנים ותקציב
+  </text>
+
+  <!-- Stats cards row -->
+  <g transform="translate(100, 220)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="280" height="140" rx="16" fill="white"/>
+    <text x="30" y="50" font-family="Arial, sans-serif" font-size="18" fill="#6b7280">התקדמות כללית</text>
+    <text x="30" y="100" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#7c3aed">78%</text>
+    <circle cx="230" cy="70" r="35" fill="#f3e8ff"/>
+    <path d="M230,35 A35,35 0 1 1 195,70" fill="none" stroke="url(#accentGrad3)" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Card 2 -->
+    <rect x="320" y="0" width="280" height="140" rx="16" fill="white"/>
+    <text x="350" y="50" font-family="Arial, sans-serif" font-size="18" fill="#6b7280">משימות הושלמו</text>
+    <text x="350" y="100" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#059669">24/31</text>
+    <rect x="510" y="45" width="60" height="60" rx="8" fill="#d1fae5"/>
+    <text x="528" y="85" font-family="Arial, sans-serif" font-size="28" fill="#059669">+</text>
+
+    <!-- Card 3 -->
+    <rect x="640" y="0" width="280" height="140" rx="16" fill="white"/>
+    <text x="670" y="50" font-family="Arial, sans-serif" font-size="18" fill="#6b7280">תקציב נותר</text>
+    <text x="670" y="100" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#0369a1">120K</text>
+    <rect x="830" y="45" width="60" height="60" rx="8" fill="#e0f2fe"/>
+
+    <!-- Card 4 -->
+    <rect x="960" y="0" width="280" height="140" rx="16" fill="white"/>
+    <text x="990" y="50" font-family="Arial, sans-serif" font-size="18" fill="#6b7280">ימים לסיום</text>
+    <text x="990" y="100" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#dc2626">14</text>
+    <rect x="1150" y="45" width="60" height="60" rx="8" fill="#fee2e2"/>
+  </g>
+
+  <!-- Main content area - Chart -->
+  <rect x="100" y="400" width="900" height="420" rx="20" fill="white"/>
+
+  <!-- Chart title -->
+  <text x="140" y="450" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1f2937">
+    התקדמות חודשית
+  </text>
+
+  <!-- Bar chart -->
+  <g transform="translate(140, 500)">
+    <!-- Y axis labels -->
+    <text x="-10" y="10" font-family="Arial, sans-serif" font-size="14" fill="#9ca3af" text-anchor="end">100%</text>
+    <text x="-10" y="85" font-family="Arial, sans-serif" font-size="14" fill="#9ca3af" text-anchor="end">75%</text>
+    <text x="-10" y="160" font-family="Arial, sans-serif" font-size="14" fill="#9ca3af" text-anchor="end">50%</text>
+    <text x="-10" y="235" font-family="Arial, sans-serif" font-size="14" fill="#9ca3af" text-anchor="end">25%</text>
+    <text x="-10" y="300" font-family="Arial, sans-serif" font-size="14" fill="#9ca3af" text-anchor="end">0%</text>
+
+    <!-- Grid lines -->
+    <line x1="0" y1="5" x2="780" y2="5" stroke="#e5e7eb" stroke-width="1"/>
+    <line x1="0" y1="80" x2="780" y2="80" stroke="#e5e7eb" stroke-width="1"/>
+    <line x1="0" y1="155" x2="780" y2="155" stroke="#e5e7eb" stroke-width="1"/>
+    <line x1="0" y1="230" x2="780" y2="230" stroke="#e5e7eb" stroke-width="1"/>
+    <line x1="0" y1="295" x2="780" y2="295" stroke="#e5e7eb" stroke-width="1"/>
+
+    <!-- Bars -->
+    <rect x="30" y="175" width="70" height="120" rx="8" fill="url(#chartGrad)"/>
+    <rect x="140" y="130" width="70" height="165" rx="8" fill="url(#chartGrad)"/>
+    <rect x="250" y="100" width="70" height="195" rx="8" fill="url(#chartGrad)"/>
+    <rect x="360" y="60" width="70" height="235" rx="8" fill="url(#chartGrad)"/>
+    <rect x="470" y="40" width="70" height="255" rx="8" fill="url(#chartGrad)"/>
+    <rect x="580" y="20" width="70" height="275" rx="8" fill="url(#accentGrad3)"/>
+    <rect x="690" y="60" width="70" height="235" rx="8" fill="#e5e7eb" stroke="#d1d5db" stroke-width="2" stroke-dasharray="5,5"/>
+
+    <!-- X axis labels -->
+    <text x="65" y="320" font-family="Arial, sans-serif" font-size="14" fill="#6b7280" text-anchor="middle">ינואר</text>
+    <text x="175" y="320" font-family="Arial, sans-serif" font-size="14" fill="#6b7280" text-anchor="middle">פברואר</text>
+    <text x="285" y="320" font-family="Arial, sans-serif" font-size="14" fill="#6b7280" text-anchor="middle">מרץ</text>
+    <text x="395" y="320" font-family="Arial, sans-serif" font-size="14" fill="#6b7280" text-anchor="middle">אפריל</text>
+    <text x="505" y="320" font-family="Arial, sans-serif" font-size="14" fill="#6b7280" text-anchor="middle">מאי</text>
+    <text x="615" y="320" font-family="Arial, sans-serif" font-size="14" fill="#6b7280" text-anchor="middle">יוני</text>
+    <text x="725" y="320" font-family="Arial, sans-serif" font-size="14" fill="#6b7280" text-anchor="middle">יולי</text>
+  </g>
+
+  <!-- Side panel - Timeline -->
+  <rect x="1040" y="400" width="780" height="420" rx="20" fill="rgba(255,255,255,0.15)"/>
+
+  <text x="1080" y="450" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">
+    אבני דרך
+  </text>
+
+  <!-- Timeline items -->
+  <g transform="translate(1080, 480)">
+    <!-- Item 1 - Completed -->
+    <circle cx="20" cy="20" r="12" fill="#22d3ee"/>
+    <line x1="20" y1="40" x2="20" y2="90" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+    <text x="50" y="15" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.6)">הושלם</text>
+    <text x="50" y="38" font-family="Arial, sans-serif" font-size="18" fill="white">תכנון ראשוני</text>
+
+    <!-- Item 2 - Completed -->
+    <circle cx="20" cy="110" r="12" fill="#22d3ee"/>
+    <line x1="20" y1="130" x2="20" y2="180" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+    <text x="50" y="105" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.6)">הושלם</text>
+    <text x="50" y="128" font-family="Arial, sans-serif" font-size="18" fill="white">פיתוח שלב א</text>
+
+    <!-- Item 3 - In Progress -->
+    <circle cx="20" cy="200" r="12" fill="#fbbf24" stroke="white" stroke-width="2"/>
+    <line x1="20" y1="220" x2="20" y2="270" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+    <text x="50" y="195" font-family="Arial, sans-serif" font-size="16" fill="#fbbf24">בתהליך</text>
+    <text x="50" y="218" font-family="Arial, sans-serif" font-size="18" fill="white">בדיקות ו-QA</text>
+
+    <!-- Item 4 - Pending -->
+    <circle cx="20" cy="290" r="12" fill="transparent" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    <text x="50" y="285" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.5)">ממתין</text>
+    <text x="50" y="308" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.7)">השקה</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="100" y="1000" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.7)">
+    10 שקפים | יחס 16:9 | PPTX
+  </text>
+
+  <!-- Version badge -->
+  <rect x="1680" y="970" width="140" height="40" rx="20" fill="rgba(255,255,255,0.2)"/>
+  <text x="1750" y="997" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">
+    v2.0
+  </text>
+</svg>
